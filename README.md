@@ -1,6 +1,6 @@
 # sashisuseso
 
-A new Flutter project.
+LT会を充実させるアプリ
 
 ## Getting Started
 
