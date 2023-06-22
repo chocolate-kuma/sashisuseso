@@ -1,6 +1,6 @@
 # sashisuseso
 
-LT会を充実させるためのアプリ
+LT会を充実させるアプリ
 
 ## Getting Started
 

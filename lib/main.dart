@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sashisuseso/pages/main/main_page.dart';
-
+import 'package:sashisuseso/main_page.dart';
 void main() {
   runApp(const MyApp());
 }
