@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatelessWidget {
@@ -5,14 +6,24 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final audioPlayer = AudioPlayer();
     return Scaffold(
       appBar: AppBar(
         title: const Text('SashiSuseSo'),
       ),
-      body: const Center(
-        child: Text(
-          'Hello, World!',
-          style: TextStyle(fontSize: 24),
+      body: Center(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                ElevatedButton(
+                    onPressed: () {
+                      audioPlayer.play(AssetSource("sa.wav"));
+                    },
+                    child: const Text('さ'))
+              ],
+            ),
+          ],
         ),
       ),
     );
