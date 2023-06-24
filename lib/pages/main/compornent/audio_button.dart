@@ -10,10 +10,14 @@ class AudioButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final audioPlayer = AudioPlayer();
-    return ElevatedButton(
-        onPressed: () {
-          audioPlayer.play(AssetSource(audio));
-        },
-        child: Text(text));
+    return SizedBox(
+      height: 100,
+      width: 200,
+      child: ElevatedButton(
+          onPressed: () {
+            audioPlayer.play(AssetSource(audio));
+          },
+          child: Text(text)),
+    );
   }
 }
