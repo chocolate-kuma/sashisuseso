@@ -15,8 +15,12 @@ class MainPage extends StatelessWidget {
         child: Column(
           children: [
             Row(
-              children: [
-                AudioButton(text: 'さ'),
+              children: const [
+                AudioButton(text: 'さ',audio: 'sa.wav',),
+                AudioButton(text: 'し', audio: 'shi.wav',),
+                AudioButton(text: 'す', audio: 'su.wav',),
+                AudioButton(text: 'せ', audio: 'se.wav',),
+                AudioButton(text: 'そ', audio: 'so.wav',),
               ],
             ),
           ],
