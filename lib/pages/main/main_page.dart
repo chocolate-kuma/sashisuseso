@@ -13,14 +13,36 @@ class MainPage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Row(
               children: const [
-                AudioButton(text: 'さ',audio: 'sa.wav',),
-                AudioButton(text: 'し', audio: 'shi.wav',),
-                AudioButton(text: 'す', audio: 'su.wav',),
-                AudioButton(text: 'せ', audio: 'se.wav',),
-                AudioButton(text: 'そ', audio: 'so.wav',),
+                Spacer(),
+                AudioButton(
+                  text: 'さ',
+                  audio: 'sa.wav',
+                ),
+                Spacer(),
+                AudioButton(
+                  text: 'し',
+                  audio: 'shi.wav',
+                ),
+                Spacer(),
+                AudioButton(
+                  text: 'す',
+                  audio: 'su.wav',
+                ),
+                Spacer(),
+                AudioButton(
+                  text: 'せ',
+                  audio: 'se.wav',
+                ),
+                Spacer(),
+                AudioButton(
+                  text: 'そ',
+                  audio: 'so.wav',
+                ),
+                Spacer(),
               ],
             ),
           ],
